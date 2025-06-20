@@ -26,8 +26,8 @@
 
 ### 2. Installation
 ```bash
-git clone <url-du-repo>
-cd Support-ticket
+git clone https://github.com/nythique/discord-ticket-bot.git
+cd discord-ticket-bot
 npm install
 ```
 
