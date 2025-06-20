@@ -4,12 +4,13 @@ const {
 } = require('discord.js');
 const config = require('./config.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
-const TOKEN = config.token; 
+const TOKEN = config.token;
+const STATUTS = config.statuts
 
 client.once('ready', () => {
     console.log(`Connecté en tant que ${client.user.tag}`);
     client.user.setPresence({
-        activities: [{ name: 'Membre', type: ActivityType.Listening }],
+        activities: [{ name: STATUTS, type: ActivityType.Listening }],
         status: 'dnd', 
     });
 });
